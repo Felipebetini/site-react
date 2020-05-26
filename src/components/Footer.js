@@ -7,9 +7,9 @@ const Footer = (props) => {
         <span className="glyphicon glyphicon-chevron-up"></span>
       </a>
       <p>
-        Bootstrap Theme Made By{" "}
-        <a href="https://www.w3schools.com" title="Visit w3schools">
-          www.w3schools.com
+        Visite{" "}
+        <a href="https://github.com/Felipebetini">
+          https://github.com/Felipebetini
         </a>
       </p>
     </footer>

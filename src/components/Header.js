@@ -23,7 +23,7 @@ const Header = (props) => {
         <div className="collapse navbar-collapse" id="myNavbar">
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/Home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/Services">Services</Link>

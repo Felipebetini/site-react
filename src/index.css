@@ -18,7 +18,25 @@ h4 {
   margin-bottom: 30px;
 }
 .jumbotron {
-  background-color: #f4511e !important;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f79000+0,ff5900+100 */
+  background: #f79000; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #f79000 0%,
+    #ff5900 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f79000 0%,
+    #ff5900 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f79000 0%,
+    #ff5900 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79000', endColorstr='#ff5900',GradientType=0 ); /* IE6-9 */
+
   color: #fff !important;
   padding: 100px 25px;
   font-family: Montserrat, sans-serif;
