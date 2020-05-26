@@ -12,7 +12,6 @@ import {
   Edit,
   Create,
   ReferenceInput,
-  Filter,
   SimpleList,
 } from "react-admin";
 
@@ -68,17 +67,4 @@ export const PostCreate = (props) => (
       <TextInput multiline source="body" />
     </SimpleForm>
   </Create>
-);
-
-const PostTitle = ({ record }) => {
-  return <span>Post {record ? `"${record.title}"` : ""}</span>;
-};
-
-const PostFilter = (props) => (
-  <Filter {...props}>
-    <TextInput label="Search" source="q" alwaysOn />
-    <ReferenceInput label="User" source="userId" reference="users" allowEmpty>
-      <SelectInput optionText="name" />
-    </ReferenceInput>
-  </Filter>
 );

@@ -8,16 +8,18 @@ const Contact = (props) => {
         <div className="col-sm-5">
           <p>Contact us and we'll get back to you within 24 hours.</p>
           <p>
-            <span className="glyphicon glyphicon-map-marker"></span> Chicago, US
+            <span className="glyphicon glyphicon-map-marker"></span>{" "}
+            Florianopolis, Brazil
           </p>
           <p>
             <span className="glyphicon glyphicon-phone"></span> +00 1515151515
           </p>
           <p>
             <span className="glyphicon glyphicon-envelope"></span>{" "}
-            myemail@something.com
+            felipebetiniribeiro@gmail.com
           </p>
         </div>
+
         <div className="col-sm-7 ">
           <div className="row">
             <div className="col-sm-6 form-group">
@@ -30,6 +32,7 @@ const Contact = (props) => {
                 required
               />
             </div>
+
             <div className="col-sm-6 form-group">
               <input
                 className="form-control"
@@ -49,6 +52,7 @@ const Contact = (props) => {
             rows="5"
           ></textarea>
           <br />
+
           <div className="row">
             <div className="col-sm-12 form-group">
               <button className="btn btn-default pull-right" type="submit">

@@ -7,7 +7,7 @@ const Footer = (props) => {
         <span className="glyphicon glyphicon-chevron-up"></span>
       </a>
       <p>
-        Visite{" "}
+        Visit{" "}
         <a href="https://github.com/Felipebetini">
           https://github.com/Felipebetini
         </a>

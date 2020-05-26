@@ -7,8 +7,10 @@ import UserIcon from "@material-ui/icons/Group";
 import jsonServerProvider from "ra-data-json-server";
 import Dashboard from "./Dashboard";
 import authProvider from "./authProvider";
+import { Customer, CustomerCreate, CustomerEdit } from "./customer";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
+
 const App = () => (
   <Admin
     dashboard={Dashboard}
@@ -24,6 +26,12 @@ const App = () => (
     />
 
     <Resource name="users" list={UserList} icon={UserIcon} />
+    <Resource
+      name="customer"
+      list={Customer}
+      create={CustomerCreate}
+      edit={CustomerEdit}
+    />
   </Admin>
 );
 export default App;
