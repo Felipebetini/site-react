@@ -11,6 +11,13 @@ import {
   TextInput,
   Edit,
   DateInput,
+  Show,
+  TabbedShowLayout,
+  Tab,
+  RichTextField,
+  DateField,
+  NumberField,
+  BooleanField,
 } from "react-admin";
 
 export const Customer = (props) => (
@@ -53,4 +60,34 @@ export const CustomerEdit = (props) => (
       <TextInput multiline source="body" />
     </SimpleForm>
   </Edit>
+);
+
+export const CustomerShow = (props) => (
+  <Show {...props}>
+    <TabbedShowLayout>
+      <Tab label="summary">
+        <TextField label="Id" source="id" />
+        <TextField source="title" />
+        <TextField source="teaser" />
+      </Tab>
+      <Tab label="body" path="body">
+        <RichTextField source="body" addLabel={false} />
+      </Tab>
+      <Tab label="Miscellaneous" path="miscellaneous">
+        <TextField
+          label="Password (if protected post)"
+          source="password"
+          type="password"
+        />
+        <DateField label="Publication date" source="published_at" />
+        <NumberField source="average_note" />
+        <BooleanField
+          label="Allow comments?"
+          source="commentable"
+          defaultValue
+        />
+        <TextField label="Nb views" source="views" />
+      </Tab>
+    </TabbedShowLayout>
+  </Show>
 );
